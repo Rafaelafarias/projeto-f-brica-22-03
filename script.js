@@ -35,3 +35,6 @@ let num1 = parseInt(prompt("Digite a nota 1"))
 let num2 = parseInt(prompt("Digite a nota 2"))
 
 console.log((num1+num2) / 2)*/
+
+/*criar alerta:
+alert()*/
