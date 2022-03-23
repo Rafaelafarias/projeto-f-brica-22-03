@@ -1,23 +1,26 @@
 @import url('https://fonts.googleapis.com/css2? family= Roboto:wght@400;700;900 & display=swap');
 
-:root {
+:root { 
     --cor-botao:#FFB800;
     --cor-botao-foco: #FF900E;
 }
 
-* {
+* { /*parte global, onde altera tudo. Zera ou altera geral*/
     box-sizing:border-box;
     margin: 0;
     padding: 0;
     /**/ /*ctrl: seleciona e comenta e descomenta*/
     text-decoration: none;
-}
-
-body{
     font-family: 'Roboto', sans-serif;
 }
 
-.header{
+body{
+    font-size: 100%; /*zerar a fonte para que possa alterar depois*/
+} 
+
+ 
+.header{ 
+    /*cabeçalho*/
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -30,5 +33,58 @@ body{
 }
 .menu {
     display: flex;
-    gap: 70px;
+    gap: 65px;
 }
+
+.item-menu{
+    font-size: 20px;
+}
+
+.area-principal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border-top: 2px solid grey;
+    padding: 50px;
+}
+
+.conteudo-principal{
+    display: flex; /*deixa um do lado do outro*/
+    flex-direction: column; /*deixa em coluna o que ta no display*/
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+}
+
+.titulo{
+    font-weight: 900px;/*peso da fonte, grossura*/
+    font-size: 48px;/*tamanho da fonte*/
+}
+
+.botao{
+    height: 109px;
+    width: 419px;
+    /*background-color: #FFB800;*/
+    background-color: var(--cor-botao);
+    color:#fff;
+    border: none; /*cancelar a borda - o none*/
+    border-radius: 30px;
+    font-weight: 700px;
+    font-size: 30px;
+    cursor:pointer; /*aparecer maozinha quando passar*/
+    transition: all 0.3s ease-in-out;  
+}
+
+.botao:hover{
+    /*pseudoclasse, toda vez que passar o mause por cima do elemento ele muda de estado*/
+    background-color: var(--cor-botao-foco);
+}
+
+.rodape{
+    padding: 45px; /*distancia retangular*/
+    border-top: 2px solid grey; /*a linha da divisão*/
+    text-align: center;
+}
+
+/*pesquisar sobre principios do mobile first: responsividade*/
