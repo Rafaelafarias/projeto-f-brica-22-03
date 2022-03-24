@@ -38,3 +38,40 @@ console.log((num1+num2) / 2)*/
 
 /*criar alerta:
 alert()*/
+
+//par ou impar
+/*
+let num = parseInt(prompt("Digite um numero"))
+
+if( num % 2 === 0){
+    console.log("Esse número é par")
+}
+else{
+    console.log("Esse número é impar")
+}*/
+
+//valor é positivo  ou negativo
+/*
+let num = parseInt(prompt("Digite um numero"))
+
+if( num <= 0){
+    console.log("Esse número é negativo")
+}
+else{
+    console.log("Esse número é positivo")
+}*/
+
+//Ver se a letra é F ou M
+/*
+let texto = prompt("Digite uma letra")
+
+if( texto === "F" || texto === "f"){
+    console.log("Feminino")
+}
+else if(texto ==="M" || texto === "m")
+{
+    console.log("Masculino")}
+else{
+    console.log("Inválido")
+}*/
+
